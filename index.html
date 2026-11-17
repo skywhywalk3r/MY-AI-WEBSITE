@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AURELIA — Городской и частный банк Лондона</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor-spotlight" id="spotlight"></div>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span>A</span>
+        AURELIA
+      </a>
+
+      <nav class="header__nav">
+        <a href="#stats">Преимущества</a>
+        <a href="#cases">Кейсы</a>
+        <a href="#reviews">Отзывы</a>
+        <a href="cases.html">Все работы и отзывы</a>
+      </nav>
+
+      <button class="btn btn--primary btn--sm" data-modal-open>Открыть счёт</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero__grid">
+        <div class="fade-up">
+          <div class="hero__badge">
+            <i></i>
+            <span>City of London • Регулируется FCA &amp; Bank of England</span>
+          </div>
+
+          <h1 class="hero__title">
+            Финансовая система для тех, кто <span class="gold-accent">создаёт будущее.</span>
+          </h1>
+
+          <p class="hero__desc">
+            Главный цифровой и частный банк Лондона. Более <strong>4.8 миллионов британцев</strong>, крупнейшие IT-корпорации и визионеры вроде Илона Маска используют Aurelia для мгновенных расчётов и управления капиталом.
+          </p>
+
+          <div class="hero__actions">
+            <button class="btn btn--primary" data-modal-open>Стать клиентом банка →</button>
+            <a href="cases.html" class="btn btn--glass">Кейсы IT-лидеров и отзывы</a>
+          </div>
+
+          <div class="hero__meta">
+            <span>Мгновенный клиринг GBP / USD / EUR</span>
+            <span>Прямой API для IT-казначейств</span>
+          </div>
+        </div>
+
+        <!-- 3D Карта -->
+        <div class="card-wrap fade-up">
+          <div class="bank-card" id="tiltCard">
+            <div class="bank-card__top">
+              <div>
+                <h4>Aurelia Private</h4>
+                <p>London • Bishopsgate</p>
+              </div>
+              <span style="color: #f3e5ab; font-size: 13px;">)))</span>
+            </div>
+
+            <div class="bank-card__chip"></div>
+
+            <div class="bank-card__bottom">
+              <div>
+                <small>Доступный лимит</small>
+                <strong>£ 14,850,000<span>.00</span></strong>
+              </div>
+              <em>Titanium</em>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Показатели -->
+    <section class="stats" id="stats">
+      <div class="container">
+        <div class="stats__head fade-up">
+          <span class="section-tag">Масштаб и технологии</span>
+          <h2 class="section-title">Банк, который работает со скоростью кода.</h2>
+        </div>
+
+        <div class="stats__grid">
+          <div class="glass-box fade-up">
+            <div class="stats__num">4.8M+</div>
+            <h3 class="stats__label">Клиентов в Британии</h3>
+            <p class="stats__text">Ежедневный городской банкинг без скрытых комиссий для жителей Лондона, Манчестера и Эдинбурга.</p>
+          </div>
+
+          <div class="glass-box fade-up">
+            <div class="stats__num">0.12 сек</div>
+            <h3 class="stats__label">Скорость переводов</h3>
+            <p class="stats__text">Собственное ядро расчётов в Сити с мгновенным исполнением транзакций до £500M за один перевод.</p>
+          </div>
+
+          <div class="glass-box fade-up">
+            <div class="stats__num">340+</div>
+            <h3 class="stats__label">IT-компаний и AI-лабораторий</h3>
+            <p class="stats__text">Казначейские API, автоматический FX-хедж и выплаты инженерам по всему миру в один клик.</p>
+          </div>
+
+          <div class="glass-box fade-up">
+            <div class="stats__num">£142B</div>
+            <h3 class="stats__label">Активов под хранением</h3>
+            <p class="stats__text">100% резервирование ликвидности в казначейских облигациях Великобритании и слитках LBMA.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Кейсы -->
+    <section class="cases" id="cases">
+      <div class="container">
+        <div class="cases__top fade-up">
+          <div>
+            <span class="section-tag">Успешные проекты</span>
+            <h2 class="section-title">Кейсы технологических гигантов.</h2>
+          </div>
+          <a href="cases.html" class="btn btn--glass">Смотреть все кейсы и отзывы →</a>
+        </div>
+
+        <div class="cases__grid">
+          <article class="glass-box case-card fade-up">
+            <div>
+              <span class="case-card__badge">AI &amp; Cloud</span>
+              <h3 class="case-card__title">Европейское казначейство для AI-кластера нового поколения</h3>
+              <p class="case-card__desc">
+                Развернули шлюз для оплаты дата-центров в Великобритании и закупки GPU на £1.4B с конвертацией GBP/USD по межбанковскому курсу без спреда.
+              </p>
+            </div>
+            <div class="case-card__footer">
+              <span>Экономия на FX</span>
+              <strong>£18.4M / год</strong>
+            </div>
+          </article>
+
+          <article class="glass-box case-card fade-up">
+            <div>
+              <span class="case-card__badge">Mobility &amp; Energy</span>
+              <h3 class="case-card__title">Платёжный процессинг для сети сверхбыстрых зарядных станций</h3>
+              <p class="case-card__desc">
+                Интегрировали микротранзакционный эквайринг в 1 200 хабов по всей Британии. Зачисление средств на мастер-счёт занимает 120 миллисекунд.
+              </p>
+            </div>
+            <div class="case-card__footer">
+              <span>Аптайм системы</span>
+              <strong>99.999%</strong>
+            </div>
+          </article>
+
+          <article class="glass-box case-card fade-up">
+            <div>
+              <span class="case-card__badge">Private Wealth</span>
+              <h3 class="case-card__title">Кредитная линия под залог акций технологических компаний</h3>
+              <p class="case-card__desc">
+                Одобрение и выдача £85M ликвидности за 24 часа для основателя финтех-единорога без необходимости продажи контрольного пакета.
+              </p>
+            </div>
+            <div class="case-card__footer">
+              <span>Скорость сделки</span>
+              <strong>24 часа</strong>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Отзывы -->
+    <section class="reviews" id="reviews">
+      <div class="container">
+        <div class="reviews__head fade-up">
+          <div>
+            <span class="section-tag">Репутация в Сити</span>
+            <h2 class="section-title">Отзывы тех, кто двигает индустрию.</h2>
+          </div>
+          <div class="reviews__rating">
+            <span>★★★★★</span> 4.98 / 5 на основе 42 000+ отзывов
+          </div>
+        </div>
+
+        <div class="reviews__grid">
+          <div class="glass-box review-card fade-up">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              «Наконец-то в Лондоне появился банк, чей API написан инженерами, а не бюрократами. Мы перевели все европейские расчёты в Aurelia за два дня — экономия колоссальная.»
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">EM</div>
+              <div>
+                <h5>Илон М.</h5>
+                <p>Основатель технологических и космических компаний</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-box review-card fade-up">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              «Использую Aurelia и как личный банк в Лондоне, и для выплат зарплат 600 разработчикам. Приложение работает плавно, а персональный менеджер отвечает за 30 секунд.»
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">AW</div>
+              <div>
+                <h5>Алистер Уэст</h5>
+                <p>CTO, Synthetix AI London</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-box review-card fade-up">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              «Лучший городской банк в Великобритании. Оплата в лондонском метро, мгновенные переводы, сейфы в золоте и титановая карта, которую принимают везде.»
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">EC</div>
+              <div>
+                <h5>Элеонора Кларк</h5>
+                <p>Управляющий партнёр, Kensington Ventures</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+      <div class="container">
+        <div class="glass-box cta__box fade-up">
+          <span class="section-tag">Присоединяйтесь к 4.8M+ клиентов</span>
+          <h2>Откройте счёт в Лондоне за <span class="gold-accent">3 минуты.</span></h2>
+          <p>Виртуальная карта для Apple Pay сразу после регистрации и доставка титановой карты курьером по Великобритании.</p>
+          <div class="cta__btns">
+            <button class="btn btn--primary" data-modal-open>Открыть личный или бизнес-счёт</button>
+            <a href="cases.html" class="btn btn--glass">Больше кейсов и отзывов</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Футер -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__info">
+        <strong>AURELIA • LONDON</strong>
+        <p>Aurelia City Bank UK Ltd. Регулируется Financial Conduct Authority (FCA) и Bank of England. 22 Bishopsgate, London EC2N 4BQ.</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Главная</a>
+        <a href="cases.html">Кейсы и Отзывы</a>
+        <a href="#stats">Технологии</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Модальное окно -->
+  <div class="modal" id="modal">
+    <div class="modal__content">
+      <div class="modal__head">
+        <h3>Открыть счёт Aurelia</h3>
+        <button class="modal__close" data-modal-close>✕</button>
+      </div>
+
+      <form id="accountForm">
+        <div class="form-group">
+          <label>Тариф</label>
+          <select>
+            <option>Aurelia Personal (Для жителей UK)</option>
+            <option>Aurelia Titanium Private</option>
+            <option>Aurelia Tech &amp; Corporate API</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Имя и Фамилия</label>
+          <input type="text" required placeholder="Gleb Popov">
+        </div>
+
+        <div class="form-group">
+          <label>Email</label>
+          <input type="email" required placeholder="name@company.co.uk">
+        </div>
+
+        <button type="submit" class="btn btn--primary" style="width: 100%; margin-top: 8px;">Получить британский IBAN</button>
+      </form>
+
+      <div id="formDone" style="display: none; text-align: center; padding: 20px 0;">
+        <h4 style="color: #f3e5ab; margin-bottom: 8px;">Заявка отправлена</h4>
+        <p style="font-size: 13px; color: #8e8e93;">Ссылка для подтверждения личности и активации счёта уже на вашей почте.</p>
+      </div>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

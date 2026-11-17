@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Кейсы и Отзывы — AURELIA London</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="cursor-spotlight" id="spotlight"></div>
+
+  <header class="header">
+    <div class="container header__inner">
+      <a href="index.html" class="header__logo">
+        <span>A</span>
+        AURELIA
+      </a>
+
+      <nav class="header__nav">
+        <a href="index.html">← На главную</a>
+        <a href="#cases-list" class="active">Кейсы</a>
+        <a href="#reviews-list">Отзывы</a>
+      </nav>
+
+      <a href="index.html" class="btn btn--glass btn--sm">На главную</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="page-header">
+      <div class="container fade-up">
+        <span class="section-tag">Архив решений • City of London</span>
+        <h1 class="section-title">Успешные работы и <span class="gold-accent">отзывы клиентов.</span></h1>
+        <p>Как мы помогаем технологическим гигантам, основателям стартапов и миллионам жителей Великобритании управлять финансами без границ.</p>
+      </div>
+    </section>
+
+    <section class="container" id="cases-list" style="padding-bottom: 90px;">
+      <!-- Фильтры -->
+      <div class="filters fade-up">
+        <button class="filters__btn is-active" data-filter="all">Все кейсы</button>
+        <button class="filters__btn" data-filter="tech">IT и AI-компании</button>
+        <button class="filters__btn" data-filter="founders">Основатели и капитал</button>
+        <button class="filters__btn" data-filter="city">Городской банкинг</button>
+      </div>
+
+      <!-- Сетка кейсов -->
+      <div class="cases__grid">
+        <article class="glass-box case-card fade-up" data-cat="tech">
+          <div>
+            <span class="case-card__badge">IT и AI-компании</span>
+            <h3 class="case-card__title">Автоматизация казначейства для AI-платформы в Кембридже</h3>
+            <p class="case-card__desc">Подключили 14 мультивалютных счетов через REST API Aurelia. Выплаты 2 400 облачным поставщикам и инженерам проходят автоматически.</p>
+          </div>
+          <div class="case-card__footer">
+            <span>Экономия времени</span>
+            <strong>-94% ручных операций</strong>
+          </div>
+        </article>
+
+        <article class="glass-box case-card fade-up" data-cat="founders">
+          <div>
+            <span class="case-card__badge">Основатели и капитал</span>
+            <h3 class="case-card__title">Бридж-финансирование сделки M&amp;A на £420M в Сити</h3>
+            <p class="case-card__desc">Структурировали расчётный эскроу-счёт и аккредитив для покупки европейского полупроводникового стартапа за 48 часов.</p>
+          </div>
+          <div class="case-card__footer">
+            <span>Объём сделки</span>
+            <strong>£420,000,000</strong>
+          </div>
+        </article>
+
+        <article class="glass-box case-card fade-up" data-cat="city">
+          <div>
+            <span class="case-card__badge">Городской банкинг</span>
+            <h3 class="case-card__title">Платёжная экосистема для 4.8M жителей Британии</h3>
+            <p class="case-card__desc">Оплата транспорта в Лондоне в одно касание, разделение счетов в ресторанах и 4.75% годовых на остаток в фунтах стерлингов.</p>
+          </div>
+          <div class="case-card__footer">
+            <span>Активных карт</span>
+            <strong>4,820,000+</strong>
+          </div>
+        </article>
+
+        <article class="glass-box case-card fade-up" data-cat="tech">
+          <div>
+            <span class="case-card__badge">IT и AI-компании</span>
+            <h3 class="case-card__title">Корпоративные карты для 3 500 инженеров DeepTech-гиганта</h3>
+            <p class="case-card__desc">Мгновенный выпуск виртуальных карт с динамическими лимитами под серверы AWS/GCP и кэшбэком 2.5% на все облачные расходы.</p>
+          </div>
+          <div class="case-card__footer">
+            <span>Возврат в бюджет</span>
+            <strong>£3.1M за год</strong>
+          </div>
+        </article>
+
+        <article class="glass-box case-card fade-up" data-cat="founders">
+          <div>
+            <span class="case-card__badge">Основатели и капитал</span>
+            <h3 class="case-card__title">Мультисемейный офис и сейфы в физическом золоте</h3>
+            <p class="case-card__desc">Прямой доступ к хранилищу слитков в Лондоне с возможностью мгновенно конвертировать граммы золота в фунты на карте.</p>
+          </div>
+          <div class="case-card__footer">
+            <span>Ликвидность</span>
+            <strong>24/7 в 140 валютах</strong>
+          </div>
+        </article>
+
+        <article class="glass-box case-card fade-up" data-cat="city">
+          <div>
+            <span class="case-card__badge">Городской банкинг</span>
+            <h3 class="case-card__title">Цифровая ипотека в Лондоне с одобрением за 18 минут</h3>
+            <p class="case-card__desc">Автоматическая оценка недвижимости в Кенсингтоне и Канэри-Уорф без бумажных анкет. Более £12B выданных кредитов.</p>
+          </div>
+          <div class="case-card__footer">
+            <span>Время до оффера</span>
+            <strong>18 минут</strong>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <!-- Дополнительные отзывы -->
+    <section class="reviews" id="reviews-list" style="background: #111114; border-top: 1px solid rgba(255,255,255,0.05);">
+      <div class="container">
+        <div class="reviews__head fade-up">
+          <div>
+            <span class="section-tag">Прямая речь</span>
+            <h2 class="section-title">Ещё больше отзывов о банке.</h2>
+          </div>
+        </div>
+
+        <div class="reviews__grid">
+          <div class="glass-box review-card fade-up">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              «Когда мы открывали офис в Лондоне, старые банки просили 4 месяца на проверки. Aurelia открыла счёт за 36 часов и дала выделенный канал SWIFT.»
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">MV</div>
+              <div>
+                <h5>Маркус Вэнс</h5>
+                <p>VP of Finance, NeuralGrid Robotics</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-box review-card fade-up">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              «Пользуюсь картой Aurelia каждый день в Манчестере уже 4 года. Ни одного сбоя, мгновенные пуши и лучший курс в поездках. Это Apple в мире финансов.»
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">SH</div>
+              <div>
+                <h5>София Харрисон</h5>
+                <p>Продуктовый дизайнер</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-box review-card fade-up">
+            <div class="review-card__stars">★★★★★</div>
+            <p class="review-card__text">
+              «Автоматические налоговые сейфы под VAT и синхронизация с бухгалтерией экономят нашей IT-студии в Эдинбурге десятки часов каждый квартал.»
+            </p>
+            <div class="review-card__author">
+              <div class="review-card__avatar">DM</div>
+              <div>
+                <h5>Дэвид МакГрегор</h5>
+                <p>CEO, NorthStar Software</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__info">
+        <strong>AURELIA • LONDON</strong>
+        <p>© 2026 Aurelia City Bank UK Ltd. 22 Bishopsgate, London EC2N 4BQ.</p>
+      </div>
+      <div class="footer__links">
+        <a href="index.html">Главная</a>
+        <a href="#cases-list">Кейсы</a>
+        <a href="#reviews-list">Отзывы</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>
